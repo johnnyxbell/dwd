@@ -38,7 +38,7 @@ const Text = styled.p`
   }
 `;
 
-export const Home = () => {
+const Home = () => {
   return (
     <HomePanel>
       <Wrapper>
@@ -85,3 +85,5 @@ export const Home = () => {
     </HomePanel>
   );
 };
+
+export default Home;
