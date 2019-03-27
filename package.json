@@ -1,5 +1,5 @@
 {
-  "name": "Devs with Disabilties",
+  "name": "Devs-with-Disabilties",
   "private": true,
   "description": "Devs with Disabilties",
   "version": "1.0",
@@ -14,7 +14,9 @@
   "dependencies": {
     "gatsby": "^2.1.31",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
