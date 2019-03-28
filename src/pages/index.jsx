@@ -10,6 +10,7 @@ import {
   faTwitter,
   faInstagram,
   faMeetup,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
 ReactGA.initialize('UA-137174658-1');
@@ -140,6 +141,13 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faMeetup} />
+              </a>
+              <a
+                href="https://github.com/johnnyxbell/dwd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </Social>
             <p>

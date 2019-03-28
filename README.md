@@ -4,4 +4,4 @@
 
 Please feel free to open a pull request if you want to improve the code :)
 
-Proudly built with GatsbyJS
+Proudly built with GatsbyJS, hosted with Netlify and CDN by CloudFlare
