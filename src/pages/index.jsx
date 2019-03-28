@@ -4,6 +4,12 @@ import { Helmet } from 'react-helmet';
 import backgroundImage from '../assets/images/bg.jpg';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
 import dwdlogo from '../assets/images/dwd-logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTwitter,
+  faInstagram,
+  faMeetup,
+} from '@fortawesome/free-brands-svg-icons';
 
 const HomePanel = styled.div`
   position: relative;
@@ -24,6 +30,20 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
+const Social = styled.div`
+  a {
+    color: #ccc;
+    font-size: 2rem;
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+`;
+
 const Text = styled.p`
   color: #fff;
   text-align: center;
@@ -37,6 +57,10 @@ const Text = styled.p`
   strong {
     color: white;
   }
+`;
+
+const TextSmall = styled.p`
+  font-size: 1.1rem;
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -54,6 +78,13 @@ const Home = () => {
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans"
           rel="stylesheet"
+        />
+        <title>Devs With Disabilities</title>
+        <link rel="canonical" href="https://dwd.dev" />
+        <meta
+          name="description"
+          content="Devs With Disabilities (DWD) is a group for all the people out
+              there that work in tech and have disabilities"
         />
       </Helmet>
       <HomePanel>
@@ -73,16 +104,40 @@ const Home = () => {
               <span role="img" aria-label="soda">
                 🥤
               </span>{' '}
-              if thats your thing? (food and drink are always supplied)
+              if thats your thing? (food and drink are always supplied).
             </p>
-            <p>
+            <TextSmall>
               P.S. You don't need to be disabled to come along and enjoy, we
               don't discriminate... just come along and show some support{' '}
-              <span role="img" aria-label="Yew">
+              <span role="img" aria-label="Yewwww">
                 🤙🏻
               </span>
               .
-            </p>
+            </TextSmall>
+            <p>Find us online</p>
+            <Social>
+              <a
+                href="https://twitter.com/dwddev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a
+                href="https://instagram.com/dwddev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                href="https://meetup.com/Devs-With-Disabilities/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faMeetup} />
+              </a>
+            </Social>
             <p>
               Our Amazing Sponsor
               <p>
