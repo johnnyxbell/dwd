@@ -14,7 +14,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 ReactGA.initialize('UA-137174658-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const HomePanel = styled.div`
   position: relative;
