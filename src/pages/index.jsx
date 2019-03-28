@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -12,11 +12,6 @@ import {
   faMeetup,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-
-if (typeof window !== `undefined`) {
-  ReactGA.initialize('UA-137174658-1');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
 
 const HomePanel = styled.div`
   position: relative;
@@ -99,6 +94,10 @@ const GlobalStyle = createGlobalStyle`
   }`;
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.initialize('UA-137174658-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <>
       <GlobalStyle />
