@@ -32,14 +32,14 @@ const Wrapper = styled.div`
 
 const Social = styled.div`
   a {
-    color: #ccc;
+    color: #fff;
     font-size: 2rem;
     margin-right: 10px;
     &:last-child {
       margin: 0;
     }
     &:hover {
-      color: #fff;
+      color: #ccc;
     }
   }
 `;
