@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 import backgroundImage from '../assets/images/bg.jpg';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
-import dwdlogo from '../assets/images/dwd-logo.png';
+import dwdLogo from '../assets/images/dwd-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTwitter,
@@ -118,7 +118,7 @@ const Home = () => {
         <Wrapper>
           <Text>
             <p>
-              <img height="150" src={dwdlogo} alt="Devs with Disabilities" />
+              <img height="150" src={dwdLogo} alt="Devs with Disabilities" />
             </p>
             <p>
               Devs With Disabilities (DWD) is a group for all the people out
