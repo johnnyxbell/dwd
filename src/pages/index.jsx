@@ -35,7 +35,6 @@ const Wrapper = styled.div`
 const Social = styled.div`
   a {
     color: #ccc;
-    font-size: 2rem;
     margin-right: 10px;
     &:last-child {
       margin: 0;
@@ -148,28 +147,48 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon
+                  size="lg"
+                  width="50px"
+                  height="50px"
+                  icon={faTwitter}
+                />
               </a>
               <a
                 href="https://instagram.com/dwddev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon
+                  size="lg"
+                  width="50px"
+                  height="50px"
+                  icon={faInstagram}
+                />
               </a>
               <a
                 href="https://meetup.com/Devs-With-Disabilities/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faMeetup} />
+                <FontAwesomeIcon
+                  size="lg"
+                  width="50px"
+                  height="50px"
+                  icon={faMeetup}
+                />
               </a>
               <a
                 href="https://github.com/johnnyxbell/dwd"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon
+                  size="lg"
+                  width="50px"
+                  height="50px"
+                  icon={faGithub}
+                />
               </a>
             </Social>
             <p>
