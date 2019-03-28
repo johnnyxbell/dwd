@@ -65,6 +65,9 @@ const Text = styled.p`
 
 const TextSmall = styled.p`
   font-size: 1.1rem;
+  @media (max-width: 769px) and (min-width: 320px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Contact = styled.div`
