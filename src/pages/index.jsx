@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components/macro';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 import backgroundImage from '../assets/images/bg.jpg';
