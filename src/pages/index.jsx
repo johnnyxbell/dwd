@@ -36,14 +36,14 @@ const Wrapper = styled.div`
 
 const Social = styled.div`
   a {
-    color: #fff;
+    color: #ccc;
     font-size: 2rem;
     margin-right: 10px;
     &:last-child {
       margin: 0;
     }
     &:hover {
-      color: #ccc;
+      color: #fff;
     }
   }
 `;
@@ -65,6 +65,21 @@ const Text = styled.p`
 
 const TextSmall = styled.p`
   font-size: 1.1rem;
+`;
+
+const Contact = styled.div`
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  a {
+    color: #ccc;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -165,6 +180,9 @@ const Home = () => {
           </Text>
         </Wrapper>
       </HomePanel>
+      <Contact>
+        <a href="mailto:hi@johnnybell.io">contact</a>
+      </Contact>
     </>
   );
 };
