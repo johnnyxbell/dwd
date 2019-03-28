@@ -149,8 +149,8 @@ const Home = () => {
               >
                 <FontAwesomeIcon
                   size="lg"
-                  width="50px"
-                  height="50px"
+                  width="30px"
+                  height="30px"
                   icon={faTwitter}
                 />
               </a>
@@ -161,8 +161,8 @@ const Home = () => {
               >
                 <FontAwesomeIcon
                   size="lg"
-                  width="50px"
-                  height="50px"
+                  width="30px"
+                  height="30px"
                   icon={faInstagram}
                 />
               </a>
@@ -173,8 +173,8 @@ const Home = () => {
               >
                 <FontAwesomeIcon
                   size="lg"
-                  width="50px"
-                  height="50px"
+                  width="30px"
+                  height="30px"
                   icon={faMeetup}
                 />
               </a>
@@ -185,8 +185,8 @@ const Home = () => {
               >
                 <FontAwesomeIcon
                   size="lg"
-                  width="50px"
-                  height="50px"
+                  width="30px"
+                  height="30px"
                   icon={faGithub}
                 />
               </a>
