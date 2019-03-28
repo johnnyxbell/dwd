@@ -69,8 +69,10 @@ const TextSmall = styled.p`
 
 const Contact = styled.div`
   position: absolute;
-  bottom: 15px;
   right: 15px;
+  @media (max-width: 769px) and (min-width: 320px) {
+    top: 15px;
+  }
   font-size: 0.9rem;
   opacity: 0.7;
   a {
