@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga';
 import backgroundImage from '../assets/images/bg.jpg';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
 import dwdlogo from '../assets/images/dwd-logo.png';
@@ -10,6 +11,9 @@ import {
   faInstagram,
   faMeetup,
 } from '@fortawesome/free-brands-svg-icons';
+
+ReactGA.initialize('UA-137174658-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const HomePanel = styled.div`
   position: relative;
