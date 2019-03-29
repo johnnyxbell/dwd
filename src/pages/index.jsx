@@ -49,6 +49,14 @@ const Text = styled.div`
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
+  h1 {
+    font-size: 1.5rem;
+    @media (max-width: 769px) and (min-width: 320px) {
+      font-size: 1rem;
+    }
+    display: inline;
+    font-weight: normal;
+  }
   @media (max-width: 769px) and (min-width: 320px) {
     font-size: 1rem;
   }
@@ -125,9 +133,9 @@ const Home = () => {
                 />
               </p>
               <p>
-                Devs With Disabilities (DWD) is a group for all the people out
-                there that work in tech and have disabilities. We plan to meetup
-                monthly, talk tech, enjoy some beers{' '}
+                <h1>Devs With Disabilities</h1> (DWD) is a group for all the
+                people out there that work in tech and have disabilities. We
+                plan to meetup monthly, talk tech, enjoy some beers{' '}
                 <span role="img" aria-label="Single Beer Emoji">
                   🍺
                 </span>{' '}
@@ -158,6 +166,8 @@ const Home = () => {
                     width="30px"
                     height="30px"
                     icon={faTwitter}
+                    role="img"
+                    aria-label="Follow Devs With Disabilities on Twitter"
                   />
                 </a>
                 <a
@@ -171,6 +181,8 @@ const Home = () => {
                     width="30px"
                     height="30px"
                     icon={faInstagram}
+                    role="img"
+                    aria-label="Follow Devs With Disabilities on Instagram"
                   />
                 </a>
                 <a
@@ -184,6 +196,8 @@ const Home = () => {
                     width="30px"
                     height="30px"
                     icon={faMeetup}
+                    role="img"
+                    aria-label="Join Devs With Disabilities for their Meetup"
                   />
                 </a>
                 <a
@@ -197,6 +211,8 @@ const Home = () => {
                     width="30px"
                     height="30px"
                     icon={faGithub}
+                    role="img"
+                    aria-label="View the Devs With Disabilities GitHub Repo"
                   />
                 </a>
               </Social>
