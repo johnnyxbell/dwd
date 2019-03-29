@@ -45,7 +45,7 @@ const Social = styled.div`
   }
 `;
 
-const Text = styled.p`
+const Text = styled.div`
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
@@ -113,103 +113,119 @@ const Home = () => {
               there that work in tech and have disabilities"
         />
       </Helmet>
-      <HomePanel>
-        <Wrapper>
-          <Text>
-            <p>
-              <img height="150" src={dwdLogo} alt="Devs with Disabilities" />
-            </p>
-            <p>
-              Devs With Disabilities (DWD) is a group for all the people out
-              there that work in tech and have disabilities. We plan to meetup
-              monthly, talk tech, enjoy some beers{' '}
-              <span role="img" aria-label="beer">
-                🍺
-              </span>{' '}
-              or soda{' '}
-              <span role="img" aria-label="soda">
-                🥤
-              </span>{' '}
-              if thats your thing? (food and drink are always supplied).
-            </p>
-            <TextSmall>
-              P.S. You don't need to be disabled to come along and enjoy, we
-              don't discriminate... just come along and show some support{' '}
-              <span role="img" aria-label="Yewwww">
-                🤙🏻
-              </span>
-              .
-            </TextSmall>
-            <p>Find us online</p>
-            <Social>
-              <a
-                href="https://twitter.com/dwddev/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  size="lg"
-                  width="30px"
-                  height="30px"
-                  icon={faTwitter}
-                />
-              </a>
-              <a
-                href="https://instagram.com/dwddev/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  size="lg"
-                  width="30px"
-                  height="30px"
-                  icon={faInstagram}
-                />
-              </a>
-              <a
-                href="https://meetup.com/Devs-With-Disabilities/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  size="lg"
-                  width="30px"
-                  height="30px"
-                  icon={faMeetup}
-                />
-              </a>
-              <a
-                href="https://github.com/johnnyxbell/dwd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  size="lg"
-                  width="30px"
-                  height="30px"
-                  icon={faGithub}
-                />
-              </a>
-            </Social>
-            <p>
-              Our Amazing Sponsor
+      <main>
+        <HomePanel>
+          <Wrapper>
+            <Text>
               <p>
+                <img
+                  height="150"
+                  src={dwdLogo}
+                  alt="Devs with Disabilities Logo"
+                />
+              </p>
+              <p>
+                Devs With Disabilities (DWD) is a group for all the people out
+                there that work in tech and have disabilities. We plan to meetup
+                monthly, talk tech, enjoy some beers{' '}
+                <span role="img" aria-label="Single Beer Emoji">
+                  🍺
+                </span>{' '}
+                or soda{' '}
+                <span role="img" aria-label="Soda Emoji">
+                  🥤
+                </span>{' '}
+                if thats your thing? (food and drink are always supplied).
+              </p>
+              <TextSmall>
+                P.S. You don't need to be disabled to come along and enjoy, we
+                don't discriminate... just come along and show some support{' '}
+                <span role="img" aria-label="Yewwww Emoji">
+                  🤙🏻
+                </span>
+                .
+              </TextSmall>
+              <p>Find us online</p>
+              <Social>
+                <a
+                  href="https://twitter.com/dwddev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow Devs With Disabilities on Twitter"
+                >
+                  <FontAwesomeIcon
+                    size="lg"
+                    width="30px"
+                    height="30px"
+                    icon={faTwitter}
+                  />
+                </a>
+                <a
+                  href="https://instagram.com/dwddev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow Devs With Disabilities on Instagram"
+                >
+                  <FontAwesomeIcon
+                    size="lg"
+                    width="30px"
+                    height="30px"
+                    icon={faInstagram}
+                  />
+                </a>
+                <a
+                  href="https://meetup.com/Devs-With-Disabilities/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Join Devs With Disabilities for their Meetup"
+                >
+                  <FontAwesomeIcon
+                    size="lg"
+                    width="30px"
+                    height="30px"
+                    icon={faMeetup}
+                  />
+                </a>
+                <a
+                  href="https://github.com/johnnyxbell/dwd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View the Devs With Disabilities GitHub Repo"
+                >
+                  <FontAwesomeIcon
+                    size="lg"
+                    width="30px"
+                    height="30px"
+                    icon={faGithub}
+                  />
+                </a>
+              </Social>
+              <p>Our Amazing Sponsor</p>
+              <p>
+                {' '}
                 <a
                   href="https://stackshare.io"
                   title="StackShare"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="StackShare, Dev With Disabilities Sponsor"
                 >
-                  <img height="30px" src={stackshareLogo} alt="StackShare" />
+                  <img
+                    height="30px"
+                    src={stackshareLogo}
+                    alt="StackShare our sponsor"
+                  />
                 </a>
               </p>
-            </p>
-          </Text>
-        </Wrapper>
-      </HomePanel>
-      <Contact>
-        <a href="mailto:hi@johnnybell.io">contact</a>
-      </Contact>
+            </Text>
+          </Wrapper>
+        </HomePanel>
+        <Contact>
+          <a href="mailto:hi@johnnybell.io" aria-label="Email Johnny Bell">
+            contact
+          </a>
+        </Contact>
+      </main>
     </>
   );
 };
