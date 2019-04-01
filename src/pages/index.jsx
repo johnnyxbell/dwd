@@ -4,13 +4,9 @@ import { Helmet } from 'react-helmet';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
 import dwdLogo from '../assets/images/dwd-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faTwitter,
-  faInstagram,
-  faMeetup,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faInstagram, faMeetup, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/layout/Layout';
+import { FONT_FAMILY } from '../styles/typography';
 
 const Wrapper = styled.div`
   max-width: 950px;
@@ -40,6 +36,7 @@ const Text = styled.div`
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
+  font-family: ${FONT_FAMILY};
   h1 {
     font-size: 1.5rem;
     @media (max-width: 769px) and (min-width: 320px) {
@@ -61,26 +58,9 @@ const Text = styled.div`
 
 const TextSmall = styled.p`
   font-size: 1.1rem;
+  font-family: ${FONT_FAMILY};
   @media (max-width: 769px) and (min-width: 320px) {
     font-size: 0.8rem;
-  }
-`;
-
-const Contact = styled.div`
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  @media (max-width: 769px) and (min-width: 320px) {
-    top: 15px;
-  }
-  font-size: 0.9rem;
-  opacity: 0.7;
-  a {
-    color: #ccc;
-    text-decoration: none;
-    &:hover {
-      color: #fff;
-    }
   }
 `;
 
@@ -88,10 +68,6 @@ export default () => {
   return (
     <>
       <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans"
-          rel="stylesheet"
-        />
         <title>Devs With Disabilities</title>
         <link rel="canonical" href="https://dwd.dev" />
         <meta
@@ -105,16 +81,11 @@ export default () => {
           <Wrapper>
             <Text>
               <p>
-                <img
-                  height="150"
-                  src={dwdLogo}
-                  alt="Devs with Disabilities Logo"
-                />
+                <img height="150" src={dwdLogo} alt="Devs with Disabilities Logo" />
               </p>
               <p>
-                <h1>Devs With Disabilities</h1> (DWD) is a group for all the
-                people out there that work in tech and have disabilities. We
-                plan to meetup monthly, talk tech, enjoy some beers{' '}
+                <h1>Devs With Disabilities</h1> (DWD) is a group for all the people out there that work in tech and have
+                disabilities. We plan to meetup monthly, talk tech, enjoy some beers{' '}
                 <span role="img" aria-label="Single Beer Emoji">
                   🍺
                 </span>{' '}
@@ -125,8 +96,8 @@ export default () => {
                 if thats your thing? (food and drink are always supplied).
               </p>
               <TextSmall>
-                P.S. You don't need to be disabled to come along and enjoy, we
-                don't discriminate... just come along and show some support{' '}
+                P.S. You don't need to be disabled to come along and enjoy, we don't discriminate... just come along and
+                show some support{' '}
                 <span role="img" aria-label="Yewwww Emoji">
                   🤙🏻
                 </span>
@@ -134,10 +105,7 @@ export default () => {
               </TextSmall>
               <p>Find us online</p>
               <Social>
-                <a
-                  href="https://twitter.com/dwddev/"
-                  aria-label="Follow Devs With Disabilities on Twitter"
-                >
+                <a href="https://twitter.com/dwddev/" aria-label="Follow Devs With Disabilities on Twitter">
                   <FontAwesomeIcon
                     size="lg"
                     width="30px"
@@ -147,10 +115,7 @@ export default () => {
                     aria-label="Follow Devs With Disabilities on Twitter"
                   />
                 </a>
-                <a
-                  href="https://instagram.com/dwddev/"
-                  aria-label="Follow Devs With Disabilities on Instagram"
-                >
+                <a href="https://instagram.com/dwddev/" aria-label="Follow Devs With Disabilities on Instagram">
                   <FontAwesomeIcon
                     size="lg"
                     width="30px"
@@ -173,10 +138,7 @@ export default () => {
                     aria-label="Join Devs With Disabilities for their Meetup"
                   />
                 </a>
-                <a
-                  href="https://github.com/johnnyxbell/dwd"
-                  aria-label="View the Devs With Disabilities GitHub Repo"
-                >
+                <a href="https://github.com/johnnyxbell/dwd" aria-label="View the Devs With Disabilities GitHub Repo">
                   <FontAwesomeIcon
                     size="lg"
                     width="30px"
@@ -195,20 +157,11 @@ export default () => {
                   title="StackShare"
                   aria-label="StackShare, Dev With Disabilities Sponsor"
                 >
-                  <img
-                    height="30px"
-                    src={stackshareLogo}
-                    alt="StackShare our sponsor"
-                  />
+                  <img height="30px" src={stackshareLogo} alt="StackShare our sponsor" />
                 </a>
               </p>
             </Text>
           </Wrapper>
-          <Contact>
-            <a href="mailto:hi@johnnybell.io" aria-label="Email Johnny Bell">
-              contact
-            </a>
-          </Contact>
         </main>
       </Layout>
     </>

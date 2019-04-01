@@ -15,8 +15,6 @@ const Container = styled.div`
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-display: auto;
   }`;
 
 const Layout = ({ children }) => {
