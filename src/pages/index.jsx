@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { Helmet } from 'react-helmet';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
 import dwdLogo from '../assets/images/dwd-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +10,7 @@ import {
   faMeetup,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-import Layout from '../components/layout';
+import Layout from '../components/layout/Layout';
 
 const Wrapper = styled.div`
   max-width: 950px;
@@ -86,6 +87,19 @@ const Contact = styled.div`
 export default () => {
   return (
     <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet"
+        />
+        <title>Devs With Disabilities</title>
+        <link rel="canonical" href="https://dwd.dev" />
+        <meta
+          name="description"
+          content="Devs With Disabilities (DWD) is a group for all the people out
+              there that work in tech and have disabilities"
+        />
+      </Helmet>
       <Layout>
         <main>
           <Wrapper>

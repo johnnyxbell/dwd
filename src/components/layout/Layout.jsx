@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components/macro';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 import backgroundImage from '../../assets/images/bg.jpg';
 import Nav from '../nav/Nav';
@@ -28,19 +27,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans"
-          rel="stylesheet"
-        />
-        <title>Devs With Disabilities</title>
-        <link rel="canonical" href="https://dwd.dev" />
-        <meta
-          name="description"
-          content="Devs With Disabilities (DWD) is a group for all the people out
-              there that work in tech and have disabilities"
-        />
-      </Helmet>
       <Nav />
       <Container>{children}</Container>
     </>
