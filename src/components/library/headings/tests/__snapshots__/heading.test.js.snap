@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading Default 1`] = `
+<h1
+  className="Heading__Title-sc-1pkikl0-0 jhhwMZ"
+>
+  hello
+</h1>
+`;

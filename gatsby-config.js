@@ -6,9 +6,7 @@ module.exports = {
         lang: 'en'
       }
     },
-    {
-      resolve: 'gatsby-plugin-styled-components'
-    },
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
