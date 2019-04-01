@@ -157,8 +157,6 @@ const Home = () => {
               <Social>
                 <a
                   href="https://twitter.com/dwddev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Follow Devs With Disabilities on Twitter"
                 >
                   <FontAwesomeIcon
@@ -172,8 +170,6 @@ const Home = () => {
                 </a>
                 <a
                   href="https://instagram.com/dwddev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Follow Devs With Disabilities on Instagram"
                 >
                   <FontAwesomeIcon
@@ -187,8 +183,6 @@ const Home = () => {
                 </a>
                 <a
                   href="https://meetup.com/Devs-With-Disabilities/"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="Join Devs With Disabilities for their Meetup"
                 >
                   <FontAwesomeIcon
@@ -202,8 +196,6 @@ const Home = () => {
                 </a>
                 <a
                   href="https://github.com/johnnyxbell/dwd"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="View the Devs With Disabilities GitHub Repo"
                 >
                   <FontAwesomeIcon
@@ -222,8 +214,6 @@ const Home = () => {
                 <a
                   href="https://stackshare.io"
                   title="StackShare"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label="StackShare, Dev With Disabilities Sponsor"
                 >
                   <img
