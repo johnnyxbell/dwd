@@ -10,7 +10,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "gatsby": "^2.1.31",
@@ -44,7 +46,13 @@
     "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "@storybook/react": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@babel/core": "^7.4.0",
+    "babel-loader": "^8.0.5"
   },
   "repository": {
     "type": "git",

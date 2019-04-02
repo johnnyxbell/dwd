@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import Heading from '../components/library/headings/Heading';
+import Heading from '../library/headings/Heading';
 
 const Speak = () => {
   return (

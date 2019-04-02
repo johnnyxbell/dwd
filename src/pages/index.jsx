@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   text-align: center;
 `;
 
