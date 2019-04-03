@@ -43,7 +43,7 @@ const Contact = () => {
           If you have any general questions you want to ask us, please feel free to use the form below to shoot us
           through a message
         </ParagraphNormal>
-        <form name="contact-us" method="POST" data-netlify="true">
+        <form name="contact-us" method="POST" data-netlify="true" action="/">
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />
