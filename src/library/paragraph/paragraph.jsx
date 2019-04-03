@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { WHITE, SILVER } from '../../styles/colors';
+import { SILVER } from '../../styles/colors';
 import { WEIGHT, FONT_FAMILY } from '../../styles/typography';
 
 const ParagraphNormal = styled.p`

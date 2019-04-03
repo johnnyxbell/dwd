@@ -40,7 +40,7 @@ const Contact = () => {
       <LayoutPage>
         <Heading title="Contact us" trail="We would love to hear from you (we don't bite)." />
         <ParagraphNormal>
-          If you have any general questions you want to ask us, please feel free to use the form below to shoot us
+          If you have any general questions you want to ask us please feel free to use the form below to shoot us
           through a message
         </ParagraphNormal>
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">

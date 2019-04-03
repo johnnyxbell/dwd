@@ -48,6 +48,7 @@ const Speak = () => {
 
         <ParagraphNormal>Please fill out the form below and we will be in touch...</ParagraphNormal>
         <form name="speak" method="POST" data-netlify="true">
+          <input type="hidden" name="speak" value="speak" />
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />
@@ -63,7 +64,12 @@ const Speak = () => {
             <TextInput placeholder="Presentation Title" type="text" name="Presentation Name" required={true} />
           </Flex>
           <Flex>
-            <TextArea placeholder="Whats your presntation about?" type="textarea" name="About your presntation" required={true} />
+            <TextArea
+              placeholder="Whats your presntation about?"
+              type="textarea"
+              name="About your presntation"
+              required={true}
+            />
           </Flex>
           <Flex>
             <Button title="Send" type="submit" />
