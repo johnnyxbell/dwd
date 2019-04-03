@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import stackshareLogo from '../assets/images/stackshare-logo.png';
 import dwdLogo from '../assets/images/dwd-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faMeetup, faGithub } from '@fortawesome/free-brands-svg-icons';
-import Layout from '../components/layout/Layout';
+import LayoutHome from '../components/layout/layout-home';
 import { FONT_FAMILY } from '../styles/typography';
+import { SILVER } from '../styles/colors';
 
 const Wrapper = styled.div`
   max-width: 950px;
@@ -64,6 +66,15 @@ const TextSmall = styled.p`
   }
 `;
 
+const SmallText = styled.div`
+  font-size: 0.8rem;
+  margin-top: -20px;
+  a {
+    color: ${SILVER};
+    text-decoration: none;
+  }
+`;
+
 export default () => {
   return (
     <>
@@ -76,7 +87,7 @@ export default () => {
               there that work in tech and have disabilities"
         />
       </Helmet>
-      <Layout>
+      <LayoutHome>
         <main>
           <Wrapper>
             <Text>
@@ -149,7 +160,7 @@ export default () => {
                   />
                 </a>
               </Social>
-              <p>Our Amazing Sponsor</p>
+              <p>Our Amazing Sponsor(s)</p>
               <p>
                 {' '}
                 <a
@@ -160,10 +171,13 @@ export default () => {
                   <img height="30px" src={stackshareLogo} alt="StackShare our sponsor" />
                 </a>
               </p>
+              <SmallText>
+                <Link to="/sponsor/">(Your logo here?)</Link>
+              </SmallText>
             </Text>
           </Wrapper>
         </main>
-      </Layout>
+      </LayoutHome>
     </>
   );
 };

@@ -11,8 +11,20 @@ const Title = styled.h1`
   font-family: ${FONT_FAMILY};
 `;
 
-const Heading = ({ title }) => {
-  return <Title>{title}</Title>;
+const TrailingText = styled.p`
+  font-size: 1rem;
+  color: ${SILVER};
+  font-weight: ${WEIGHT.THIN};
+  font-family: ${FONT_FAMILY};
+`;
+
+const Heading = ({ title, trail }) => {
+  return (
+    <div>
+      <Title>{title}</Title>
+      {trail && <TrailingText>{trail}</TrailingText>}
+    </div>
+  );
 };
 
 Heading.propTypes = {

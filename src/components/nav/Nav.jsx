@@ -30,6 +30,9 @@ const Navigation = styled.nav`
     list-style-type: none;
     color: white;
     margin-right: 20px;
+    &:last-child {
+      margin: 0;
+    }
   }
 `;
 
@@ -38,16 +41,24 @@ const Nav = () => {
     <Navigation>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" aria-label="Home page for Devs with Disabilities">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/speak/">Speak</Link>
+          <Link to="/speak/" aria-label="Speak at the Devs with Disabilities meetup">
+            Speak
+          </Link>
         </li>
         <li>
-          <Link to="/sponsor/">Sponsor</Link>
+          <Link to="/sponsor/" aria-label="Sponsor the Devs With Disabilities Meetup">
+            Sponsor / Host
+          </Link>
         </li>
         <li>
-          <Link to="/contact/">Contact Us</Link>
+          <Link to="/contact/" aria-label="Contact Devs With Disabilities">
+            Contact Us
+          </Link>
         </li>
       </ul>
     </Navigation>

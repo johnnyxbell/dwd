@@ -3,7 +3,10 @@ import renderer from 'react-test-renderer';
 import Heading from '../Heading';
 
 describe('Heading', () => {
-  test('Default', () => {
+  test('Heading', () => {
     expect(renderer.create(<Heading title="hello" />).toJSON()).toMatchSnapshot();
+  });
+  test('Heading with trailing text', () => {
+    expect(renderer.create(<Heading title="hello" trail="I am some trailing text" />).toJSON()).toMatchSnapshot();
   });
 });
