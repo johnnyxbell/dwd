@@ -43,7 +43,7 @@ const Contact = () => {
           If you have any general questions you want to ask us please feel free to use the form below to shoot us
           through a message
         </ParagraphNormal>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="bot-field" />
