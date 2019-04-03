@@ -55,7 +55,7 @@ const Contact = () => {
             <TextInput placeholder="Your Email" type="email" name="Email Address" required={true} />
           </Flex>
           <Flex>
-            <TextArea placeholder="Your Message" type="textarea" name="yYour comments" required={true} />
+            <TextArea placeholder="Your Message" type="textarea" name="Your Message" required={true} />
           </Flex>
           <Flex>
             <Button title="Send" type="submit" />

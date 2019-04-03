@@ -71,7 +71,7 @@ const Sponsor = () => {
             <TextInput placeholder="Company Name" type="text" name="Company" required={true} />
           </FlexSpace>
           <Flex>
-            <TextArea placeholder="Your Message" type="textarea" name="yYour comments" required={true} />
+            <TextArea placeholder="Your Message" type="textarea" name="Your Message" required={true} />
           </Flex>
           <Flex>
             <Button title="Send" type="submit" />
