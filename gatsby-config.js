@@ -17,6 +17,11 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {}
+    },
+    'gatsby-plugin-offline'
   ]
 };

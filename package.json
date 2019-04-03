@@ -23,13 +23,19 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/react": "^5.0.6",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.6.0",
+    "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-gatsby": "^0.1.10",
     "eslint": "^5.16.0",
@@ -39,6 +45,7 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
+    "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-styled-components": "^3.0.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.6.0",
@@ -46,13 +53,7 @@
     "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.8.6",
-    "styled-components": "^4.2.0",
-    "@storybook/react": "^5.0.6",
-    "@storybook/addon-actions": "^5.0.6",
-    "@storybook/addon-links": "^5.0.6",
-    "@storybook/addons": "^5.0.6",
-    "@babel/core": "^7.4.0",
-    "babel-loader": "^8.0.5"
+    "styled-components": "^4.2.0"
   },
   "repository": {
     "type": "git",
