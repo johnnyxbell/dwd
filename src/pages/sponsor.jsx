@@ -38,7 +38,7 @@ const Sponsor = () => {
         />
       </Helmet>
       <LayoutPage>
-        <Heading title="Sponsor(s)" trail="Want to sponsor us, or host an event?" />
+        <Heading title="Sponsor" trail="Want to sponsor us, or host an event?" />
         <ParagraphNormal>
           We are always looking for sponsors or companies to host our events. We generally hold our event of the last
           Thursday of every month but we are flexible if you need to choose a different date.
@@ -58,7 +58,7 @@ const Sponsor = () => {
           homepage and a bunch of other benefits please let us know.
         </ParagraphNormal>
         <ParagraphNormal>So if you are interested in either hosting or sponsoring, get in touch below.</ParagraphNormal>
-        <form name="contact-us" method="POST" data-netlify="true">
+        <form name="Sponsor" method="POST" data-netlify="true">
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />

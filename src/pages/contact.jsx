@@ -49,7 +49,7 @@ const Contact = () => {
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />
           </FlexSpace>
           <Flex>
-            <TextInput placeholder="Your Last Email" type="email" name="Email Address" required={true} />
+            <TextInput placeholder="Your Email" type="email" name="Email Address" required={true} />
           </Flex>
           <Flex>
             <TextArea placeholder="Your Message" type="textarea" name="yYour comments" required={true} />
