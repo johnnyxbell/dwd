@@ -44,7 +44,7 @@ const Contact = () => {
           through a message
         </ParagraphNormal>
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="bot-field" />
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />

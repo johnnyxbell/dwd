@@ -47,8 +47,8 @@ const Speak = () => {
         </ParagraphNormal>
 
         <ParagraphNormal>Please fill out the form below and we will be in touch...</ParagraphNormal>
-        <form name="speak" method="POST" data-netlify="true">
-          <input type="hidden" name="speak" value="speak" />
+        <form name="speak" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />

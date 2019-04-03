@@ -58,8 +58,8 @@ const Sponsor = () => {
           homepage and a bunch of other benefits please let us know.
         </ParagraphNormal>
         <ParagraphNormal>So if you are interested in either hosting or sponsoring, get in touch below.</ParagraphNormal>
-        <form name="sponsor" method="POST" data-netlify="true">
-          <input type="hidden" name="sponsor" value="sponsor" />
+        <form name="sponsor" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
             <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />
