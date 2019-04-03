@@ -45,7 +45,6 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
-    "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-styled-components": "^3.0.7",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.6.0",
