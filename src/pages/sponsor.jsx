@@ -40,14 +40,13 @@ const Sponsor = () => {
       <LayoutPage>
         <Heading title="Sponsor" trail="Want to sponsor us, or host an event?" />
         <ParagraphNormal>
-          We are always looking for sponsors or companies to host our events. We generally hold our event of the last
-          Thursday of every month but we are flexible if you need to choose a different date.
+          We are always looking for sponsors or companies to host our events. We generally hold our event on the last
+          Thursday of each month, but we are flexible if you need to choose a different date.
         </ParagraphNormal>
         <ParagraphNormal>
           Keep in mind if you are interested in hosting the event, it would be amazing if you could supply food
-          (pizzas), beer and soda. I understand that this is not always possible but ideally we want to have some
-          snacks. To ensure we are not leaving a bunch of people out our meetups are 20 members plus, so if you can't
-          host more than 20 people it might be a bit hard for us to host there.
+          (pizzas), beer and soda. To ensure we are not leaving out too many people our meetups are 20 members plus, so
+          if you can't host more than 20 people it might be a bit hard for us to host there.
         </ParagraphNormal>
         <ParagraphNormal>
           If you are hosting you get the 7:00-7:30pm slot to present, feel free to present about whatever you like as
@@ -58,7 +57,7 @@ const Sponsor = () => {
           homepage and a bunch of other benefits please let us know.
         </ParagraphNormal>
         <ParagraphNormal>So if you are interested in either hosting or sponsoring, get in touch below.</ParagraphNormal>
-        <form name="sponsor" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="sponsor" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="sponsor" />
           <input type="hidden" name="bot-field" />
