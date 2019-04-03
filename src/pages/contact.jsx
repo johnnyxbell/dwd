@@ -44,6 +44,8 @@ const Contact = () => {
           through a message
         </ParagraphNormal>
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="bot-field" />
           <FlexSpace>
             <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
