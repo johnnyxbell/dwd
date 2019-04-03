@@ -9,13 +9,18 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "gatsby": "^2.1.31",
     "gatsby-plugin-html-attributes": "^1.0.5",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
@@ -23,12 +28,31 @@
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.6.0",
     "babel-plugin-styled-components": "^1.10.0",
+    "babel-preset-gatsby": "^0.1.10",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
     "gatsby-plugin-styled-components": "^3.0.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.6.0",
     "prettier": "^1.16.4",
     "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "@storybook/react": "^5.0.6",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@babel/core": "^7.4.0",
+    "babel-loader": "^8.0.5"
   },
   "repository": {
     "type": "git",

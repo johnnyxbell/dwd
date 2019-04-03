@@ -3,11 +3,20 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
-        lang: 'en',
-      },
+        lang: 'en'
+      }
     },
+    'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-styled-components',
-    },
-  ],
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Open Sans`,
+            variants: [`200`, `400`, `600`]
+          }
+        ]
+      }
+    }
+  ]
 };
