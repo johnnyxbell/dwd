@@ -5,17 +5,17 @@ import backgroundImage from '../../assets/images/bg.jpg';
 import Nav from '../nav/Nav';
 
 const Container = styled.div`
-  position: relative;
-  background: url(${backgroundImage}) repeat center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100vw;
+    position: relative;
+    background: url(${backgroundImage}) repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
 `;
 
 const Main = styled.main`
-  max-width: 1140px;
-  margin: auto;
-  padding: 50px;
+    max-width: 750px;
+    margin: auto;
+    padding: 50px;
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -24,19 +24,19 @@ const GlobalStyle = createGlobalStyle`
   }`;
 
 const LayoutPage = ({ children }) => {
-  useEffect(() => {
-    ReactGA.initialize('UA-137174658-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  });
-  return (
-    <>
-      <GlobalStyle />
-      <Nav />
-      <Container>
-        <Main>{children}</Main>
-      </Container>
-    </>
-  );
+    useEffect(() => {
+        ReactGA.initialize('UA-137174658-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    });
+    return (
+        <>
+            <GlobalStyle />
+            <Nav />
+            <Container>
+                <Main>{children}</Main>
+            </Container>
+        </>
+    );
 };
 
 export default LayoutPage;
