@@ -11,13 +11,13 @@ import { FONT_FAMILY } from '../styles/typography';
 import { SILVER } from '../styles/colors';
 
 const Wrapper = styled.div`
-  max-width: 950px;
+  max-width: 850px;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   text-align: center;
 `;
 
@@ -37,10 +37,10 @@ const Social = styled.div`
 const Text = styled.div`
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: ${FONT_FAMILY};
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     @media (max-width: 769px) and (min-width: 320px) {
       font-size: 1rem;
     }
