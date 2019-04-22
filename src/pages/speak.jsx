@@ -42,7 +42,7 @@ const Speak = () => {
         <ParagraphNormal>
           We are so glad that you're interested in presenting at our meetup! A little info about our speakers - No, you
           don't need to have a disability to talk at the meetup. As long as your topic has something to do with tech,
-          and our audience would find it interesting you're in. We are always very interested in your topic has
+          and our audience would find it interesting. You're in. P.S. We are always very interested if your topic has
           something to do with a11y though.
         </ParagraphNormal>
 
