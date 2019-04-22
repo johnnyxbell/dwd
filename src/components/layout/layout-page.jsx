@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.main`
-  max-width: 750px;
+  max-width: 850px;
   margin: auto;
   padding: 50px;
 `;

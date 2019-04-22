@@ -38,7 +38,7 @@ const Speak = () => {
         />
       </Helmet>
       <LayoutPage>
-        <Heading title="Speakers" trail="So you want to speak at the meetup?" />
+        <Heading title="Call for presenters" trail="So you want to speak at the meetup?" />
         <ParagraphNormal>
           We are so glad that you're interested in presenting at our meetup! A little info about our speakers - No, you
           don't need to have a disability to talk at the meetup. As long as your topic has something to do with tech,

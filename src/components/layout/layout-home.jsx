@@ -9,7 +9,7 @@ const Container = styled.div`
   position: relative;
   background: url(${backgroundImage}) repeat center center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
 `;
 
