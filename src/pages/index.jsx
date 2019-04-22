@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 `;
 
@@ -55,14 +55,6 @@ const Text = styled.div`
   padding: 0;
   strong {
     color: white;
-  }
-`;
-
-const TextSmall = styled.p`
-  font-size: 1.1rem;
-  font-family: ${FONT_FAMILY};
-  @media (max-width: 769px) and (min-width: 320px) {
-    font-size: 0.8rem;
   }
 `;
 
@@ -104,17 +96,8 @@ export default () => {
                 <span role="img" aria-label="Soda Emoji">
                   🥤
                 </span>{' '}
-                if thats your thing? (food and drink are always supplied).
+                if thats your thing. (food and drink are always supplied).
               </p>
-              <TextSmall>
-                P.S. You don't need to be disabled to come along and enjoy, we don't discriminate... just come along and
-                show some support{' '}
-                <span role="img" aria-label="Yewwww Emoji">
-                  🤙🏻
-                </span>
-                .
-              </TextSmall>
-              <p>Find us online</p>
               <Social>
                 <a href="https://twitter.com/dwddev/" aria-label="Follow Devs With Disabilities on Twitter">
                   <FontAwesomeIcon
@@ -160,7 +143,7 @@ export default () => {
                   />
                 </a>
               </Social>
-              <p>Our Amazing Sponsor(s)</p>
+              <p>Sponsors</p>
               <p>
                 {' '}
                 <a

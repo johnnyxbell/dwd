@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components/macro';
 import ReactGA from 'react-ga';
 import backgroundImage from '../../assets/images/bg.jpg';
 import Nav from '../nav/Nav';
+import Footer from '../footer/Footer';
 
 const Container = styled.div`
   position: relative;
@@ -35,6 +36,7 @@ const LayoutPage = ({ children }) => {
       <Container>
         <Main>{children}</Main>
       </Container>
+      <Footer />
     </>
   );
 };

@@ -47,17 +47,17 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/speak/" aria-label="Speak at the Devs with Disabilities meetup">
-            Speak
+            CFP
           </Link>
         </li>
         <li>
           <Link to="/sponsor/" aria-label="Sponsor the Devs With Disabilities Meetup">
-            Sponsor / Host
+            Host
           </Link>
         </li>
         <li>
           <Link to="/contact/" aria-label="Contact Devs With Disabilities">
-            Contact Us
+            Contact
           </Link>
         </li>
       </ul>
