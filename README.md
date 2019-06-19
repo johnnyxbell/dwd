@@ -1,7 +1,7 @@
 ### DWD Website 2019
 
 ### Cross Browser Testing by BrowserStack
-<img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/browserstack-logo.png" alt="BrowserStack" width="200"/>
+<a href="https://www.browserstack.com/"><img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/browserstack-logo.png" alt="BrowserStack" width="200"/></a>
 
 #### Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9adc737e-b6da-4468-8b0d-5553c922525c/deploy-status)](https://app.netlify.com/sites/gifted-meitner-94ddaa/deploys)
