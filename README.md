@@ -1,6 +1,6 @@
 ### DWD Website 2019
 
-<a href="https://www.dwd.dev"><img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/browserstack-logo.png" alt="DWD" width="200"/></a>
+<a href="https://www.dwd.dev"><img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/dwd-logo-small.png" alt="DWD" width="200"/></a>
 
 #### Cross Browser Testing by BrowserStack
 <a href="https://www.browserstack.com/"><img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/browserstack-logo.png" alt="BrowserStack" width="200"/></a>
