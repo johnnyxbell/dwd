@@ -1,11 +1,14 @@
 ### DWD Website 2019
 
+### Cross Browser Testing by BrowserStack
+<img src="https://raw.githubusercontent.com/johnnyxbell/dwd/master/src/assets/images/browserstack-logo.png" alt="BrowserStack" width="200"/>
+
 #### Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4230dbf6-bae9-4964-868d-89966cbf1746/deploy-status)](https://app.netlify.com/sites/vigilant-khorana-f0fd67/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9adc737e-b6da-4468-8b0d-5553c922525c/deploy-status)](https://app.netlify.com/sites/gifted-meitner-94ddaa/deploys)
 
 #### Tech Stack
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/johnnyxbell/devs-with-disabilities)
 
 Please feel free to open a pull request if you want to improve the code :)
 
-Proudly built with GatsbyJS, hosted with Netlify and CDN by CloudFlare
+Proudly built with GatsbyJS, hosted with Netlify, CDN by CloudFlare and Cross Browser Testing by BrowserStack
