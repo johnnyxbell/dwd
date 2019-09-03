@@ -1,12 +1,12 @@
-import React from 'react';
-import LayoutPage from '../components/layout/layout-page';
-import Heading from '../library/headings/Heading';
-import { Helmet } from 'react-helmet';
-import TextInput from '../library/inputs/text';
-import TextArea from '../library/inputs/textarea';
-import Button from '../library/buttons/button';
-import styled from 'styled-components/macro';
-import ParagraphNormal from '../library/paragraph/paragraph';
+import React from "react";
+import LayoutPage from "../components/layout/layout-page";
+import Heading from "../library/headings/Heading";
+import { Helmet } from "react-helmet";
+import TextInput from "../library/inputs/text";
+import TextArea from "../library/inputs/textarea";
+import Button from "../library/buttons/button";
+import styled from "styled-components/macro";
+import ParagraphNormal from "../library/paragraph/paragraph";
 
 const Flex = styled.div`
   display: flex;
@@ -38,32 +38,73 @@ const Speak = () => {
         />
       </Helmet>
       <LayoutPage>
-        <Heading title="Call for presenters" trail="So you want to speak at the meetup?" />
+        <Heading
+          title="Call for presenters"
+          trail="So you want to speak at the meetup?"
+        />
         <ParagraphNormal>
-          We are so glad that you're interested in presenting at our meetup! A little info about our speakers - No, you
-          don't need to have a disability to talk at the meetup. As long as your topic has something to do with tech,
-          and our audience would find it interesting. You're in. P.S. We are always very interested if your topic has
-          something to do with a11y though.
+          We are so glad that you're interested in presenting at our meetup! A
+          little info about our speakers - No, you don't need to have a
+          disability to talk at the meetup. As long as your topic has something
+          to do with tech, and our audience would find it interesting. You're
+          in. P.S. We are always very interested if your topic has something to
+          do with a11y though.
         </ParagraphNormal>
 
-        <ParagraphNormal>Please fill out the form below and we will be in touch...</ParagraphNormal>
-        <form name="speak" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success/">
+        <ParagraphNormal>
+          Please fill out the form below and we will be in touch...
+        </ParagraphNormal>
+        <form
+          name="speak"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/success/"
+        >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="speak" />
           <input type="hidden" name="bot-field" />
           <FlexSpace>
-            <TextInput placeholder="Your First Name" type="text" name="First Name" required={true} />
-            <TextInput placeholder="Your Last Name" type="text" name="Last Name" required={true} />
+            <TextInput
+              placeholder="Your First Name"
+              type="text"
+              name="First Name"
+              required={true}
+            />
+            <TextInput
+              placeholder="Your Last Name"
+              type="text"
+              name="Last Name"
+              required={true}
+            />
           </FlexSpace>
           <Flex>
-            <TextInput placeholder="Your Last Email" type="email" name="Email Address" required={true} />
+            <TextInput
+              placeholder="Your Email"
+              type="email"
+              name="Email Address"
+              required={true}
+            />
           </Flex>
           <FlexSpace>
-            <TextInput placeholder="Twitter Handle" type="text" name="Twitter" />
-            <TextInput placeholder="GitHub Username" type="text" name="Github" />
+            <TextInput
+              placeholder="Twitter Handle"
+              type="text"
+              name="Twitter"
+            />
+            <TextInput
+              placeholder="GitHub Username"
+              type="text"
+              name="Github"
+            />
           </FlexSpace>
           <Flex>
-            <TextInput placeholder="Presentation Title" type="text" name="Presentation Name" required={true} />
+            <TextInput
+              placeholder="Presentation Title"
+              type="text"
+              name="Presentation Name"
+              required={true}
+            />
           </Flex>
           <Flex>
             <TextArea
