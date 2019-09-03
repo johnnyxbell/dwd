@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import stackshareLogo from "../assets/images/stackshare-logo.png";
@@ -61,6 +61,14 @@ const Text = styled.div`
   strong {
     color: white;
   }
+  p {
+    a {
+      color: ${SILVER};
+      :hover {
+        color: white;
+      }
+    }
+  }
 `;
 
 const SmallText = styled.div`
@@ -96,17 +104,27 @@ export default () => {
                 />
               </p>
               <p>
-                <h1>Devs With Disabilities</h1> (DWD) is a group for all the
-                people out there that work in tech and have disabilities. We
-                plan to meetup monthly, talk tech, enjoy some beers{" "}
-                <span role="img" aria-label="Single Beer Emoji">
-                  🍺
-                </span>{" "}
-                or soda{" "}
-                <span role="img" aria-label="Soda Emoji">
-                  🥤
-                </span>{" "}
-                if thats your thing. (food and drink are always supplied).
+                <h1>Devs With Disabilities</h1> (DwD) is a meetup in the Bay
+                Area &amp; Salt Lake City. We plan to meetup monthly and talk
+                about accessibility (a11y), tech and disabilities. The meetup is
+                for all people that are interested in a11y and tech.
+              </p>
+              <p>
+                DwD is also a Podcast hosted by{" "}
+                <a
+                  href="https://twitter.com/courtneyyen"
+                  aria-label="Courtney Twitter"
+                >
+                  @courtneyyen
+                </a>{" "}
+                &amp;{" "}
+                <a
+                  href="https://twitter.com/johnnyxbell"
+                  aria-label="Johnny Twitter"
+                >
+                  @johnnyxbell
+                </a>{" "}
+                (coming September 2019)
               </p>
               <Social>
                 <a
