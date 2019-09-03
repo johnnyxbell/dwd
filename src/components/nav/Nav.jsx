@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components/macro';
-import dwdLogo from '../../assets/images/dwd-logo-small.png';
-import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { WHITE, SILVER, PICTON_BLUE_TRANSPARENT } from '../../styles/colors';
-import { FONT_FAMILY } from '../../styles/typography';
-import NavItems from './NavItems';
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import styled from "styled-components/macro";
+import dwdLogo from "../../assets/images/dwd-logo-small.png";
+import { faBars, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { WHITE, SILVER, PICTON_BLUE_TRANSPARENT } from "../../styles/colors";
+import { FONT_FAMILY } from "../../styles/typography";
+import NavItems from "./NavItems";
 
 const Navigation = styled.nav`
   @media (max-width: 769px) and (min-width: 320px) {
@@ -64,7 +64,8 @@ const MobileNav = styled.nav`
   background: ${PICTON_BLUE_TRANSPARENT};
   z-index: 1;
   font-family: ${FONT_FAMILY};
-  justify-content: ${props => (props.showHamburger ? 'flex-end' : 'space-between')};
+  justify-content: ${props =>
+    props.showHamburger ? "flex-end" : "space-between"};
   align-items: center;
 `;
 

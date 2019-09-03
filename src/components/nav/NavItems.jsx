@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components/macro';
-import { WHITE } from '../../styles/colors';
-import { FONT_FAMILY } from '../../styles/typography';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components/macro";
+import { WHITE } from "../../styles/colors";
+import { FONT_FAMILY } from "../../styles/typography";
 
 const Items = styled.nav`
   a {
@@ -41,12 +41,18 @@ const NavItems = () => {
           </Link>
         </li>
         <li>
-          <Link to="/speak/" aria-label="Speak at the Devs with Disabilities meetup">
+          <Link
+            to="/speak/"
+            aria-label="Speak at the Devs with Disabilities meetup"
+          >
             CFP
           </Link>
         </li>
         <li>
-          <Link to="/sponsor/" aria-label="Sponsor the Devs With Disabilities Meetup">
+          <Link
+            to="/sponsor/"
+            aria-label="Sponsor the Devs With Disabilities Meetup"
+          >
             Sponsor / Host
           </Link>
         </li>
@@ -56,7 +62,10 @@ const NavItems = () => {
           </Link>
         </li>
         <li>
-          <Link to="/code-of-conduct/" aria-label=" Devs With Disabilities Meetup Code of Conduct">
+          <Link
+            to="/code-of-conduct/"
+            aria-label=" Devs With Disabilities Meetup Code of Conduct"
+          >
             Conduct
           </Link>
         </li>
