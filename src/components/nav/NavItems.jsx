@@ -62,14 +62,6 @@ const NavItems = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/code-of-conduct/"
-            aria-label=" Devs With Disabilities Meetup Code of Conduct"
-          >
-            Conduct
-          </Link>
-        </li>
-        <li>
           <Link to="/contact/" aria-label="Contact Devs With Disabilities">
             Contact
           </Link>
