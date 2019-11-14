@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 const Video = () => {
   return (
     <Wrapper>
-      <iframe title="Home Page Video" src="https://player.vimeo.com/video/353267294?autoplay=1&loop=1&byline=0&title=0" />
+      <iframe title="Home Page Video" src="https://player.vimeo.com/video/353267294?background=1&loop=1&byline=0&title=0" />
     </Wrapper>
   );
 };
